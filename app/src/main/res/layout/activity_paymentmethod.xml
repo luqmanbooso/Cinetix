@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray"
+    android:fitsSystemWindows="true"
+    tools:context=".paymentmethod" >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="411dp"
+        android:layout_height="36dp"
+        app:cardBackgroundColor="#88FFC107"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="34dp">
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="411dp"
+            android:layout_height="40dp"
+            android:layout_margin="5sp"
+            android:fontFamily="@font/kanit_italic"
+            android:text="Complete transaction within 05:00"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView57"
+        android:layout_width="281dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="152dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mastercard" />
+
+    <LinearLayout
+        android:layout_width="284dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="22dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/black"
+            android:text="Master"
+            app:cornerRadius="5dp" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/black"
+            android:text="Visa"
+            app:cornerRadius="5dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextNumberPassword"
+        android:layout_width="165dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="cvv"
+        android:inputType="numberPassword"
+        android:textColorHint="#B8B3B3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberSigned" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="350dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:buttonTint="@color/white"
+        android:text="Save the Card for Future Use"
+        android:textColor="@color/white"
+        android:textColorLink="@color/orange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate"
+        app:useMaterialThemeColors="false" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="358dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="Card Holder Name"
+        android:inputType="text"
+        android:textColorHint="#B8B3B3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView57" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="152dp"
+        android:backgroundTint="@color/orange"
+        android:text="Pay Now"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+    <EditText
+        android:id="@+id/editTextNumberSigned"
+        android:layout_width="358dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="Card Number"
+        android:inputType="numberSigned"
+        android:textColorHint="#B8B3B3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="181dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="Exp Date"
+        android:inputType="date"
+        android:textColorHint="#B8B3B3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberSigned" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/kanit_light"
+        android:text="Total Rs. 3500.00"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="563dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="403dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="4dp"
+        app:cardBackgroundColor="@color/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2">
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

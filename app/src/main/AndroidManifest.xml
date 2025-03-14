@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Cinetix"
+        tools:targetApi="31">
+        <activity
+            android:name=".bookinghall"
+            android:exported="false" />
+        <activity
+            android:name=".MoviesShow"
+            android:exported="false" />
+        <activity
+            android:name=".movies"
+            android:exported="false"
+            android:theme="@style/Theme.Cinetix" />
+        <activity
+            android:name=".cancelTicket"
+            android:exported="false" />
+        <activity
+            android:name=".viewtickets"
+            android:exported="false" />
+        <activity
+            android:name=".Ticket"
+            android:exported="false" />
+        <activity
+            android:name=".paymentconfirm"
+            android:exported="false" />
+        <activity
+            android:name=".editprofile"
+            android:exported="false"
+            android:theme="@style/Theme.Cinetix" />
+        <activity
+            android:name=".paymentmethod"
+            android:exported="false"
+            android:theme="@style/Theme.Cinetix" />
+        <activity
+            android:name=".bookSeat"
+            android:exported="false" />
+        <activity
+            android:name=".bookHall"
+            android:exported="false" />
+        <activity
+            android:name=".BookDate"
+            android:exported="false"
+            android:theme="@style/Theme.Cinetix" />
+        <activity
+            android:name=".movieviewpage"
+            android:exported="false" />
+        <activity
+            android:name=".myprofile"
+            android:exported="false" />
+        <activity
+            android:name=".Homepage2"
+            android:exported="false" />
+        <activity
+            android:name=".Homepage"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".SignIn"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Mainpage"
+            android:exported="false" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="false"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".Onboardsc3"
+            android:exported="false" />
+        <activity
+            android:name=".Onboardsc2"
+            android:exported="false" />
+        <activity
+            android:name=".OnboardSc1"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

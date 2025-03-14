@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray"
+    tools:context=".Homepage">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="412dp"
+        android:layout_height="718dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0sp"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:scrollbarSize="0dp">
+
+            <TextView
+                android:id="@+id/nowshowing2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kanit_italic"
+                android:text="     Now Showing"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="519dp"
+                android:layout_marginBottom="20sp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="70sp"
+                    android:orientation="horizontal">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="30sp"
+                        android:orientation="vertical"
+                        app:cardBackgroundColor="#00FFFFFF"
+                        app:cardCornerRadius="20sp"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout26"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:layout_constraintEnd_toEndOf="@+id/linearLayout3_1"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="parent">
+
+                            <ImageView
+                                android:id="@+id/imageView19"
+                                android:layout_width="300sp"
+                                android:layout_height="400sp"
+                                android:layout_marginEnd="1dp"
+                                android:scaleType="fitCenter"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/dune" />
+
+                            <TextView
+                                android:id="@+id/textView9_3"
+                                android:layout_width="292dp"
+                                android:layout_height="56dp"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:padding="10sp"
+                                android:text="Dune Part 2"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="30sp"
+                        android:orientation="vertical"
+                        app:cardBackgroundColor="#00FFFFFF"
+                        app:cardCornerRadius="20sp"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout27"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="parent">
+
+                            <ImageView
+                                android:id="@+id/imageView16_1"
+                                android:layout_width="300sp"
+                                android:layout_height="400sp"
+                                android:scaleType="fitCenter"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/dune" />
+
+                            <TextView
+                                android:id="@+id/textView9_5"
+                                android:layout_width="292dp"
+                                android:layout_height="56dp"
+                                android:layout_marginEnd="4dp"
+                                android:padding="10sp"
+                                android:text="Dune Part 2"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="300sp"
+                        android:layout_height="450sp"
+                        android:layout_marginRight="30sp"
+                        android:orientation="vertical"
+                        app:cardBackgroundColor="#00FFFFFF"
+                        app:cardCornerRadius="20sp"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout28"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imageView16_2"
+                                android:layout_width="300sp"
+                                android:layout_height="400sp"
+                                android:scaleType="fitCenter"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/dune" />
+
+                            <TextView
+                                android:id="@+id/textView9_6"
+                                android:layout_width="292dp"
+                                android:layout_height="56dp"
+                                android:layout_marginEnd="4dp"
+                                android:padding="10sp"
+                                android:text="Dune Part 2"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/imageView16_2" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="251dp"
+                android:layout_marginBottom="20sp"
+                android:background="@drawable/promobox"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="464dp">
+
+                <ImageView
+                    android:id="@+id/imageView24"
+                    android:layout_width="195dp"
+                    android:layout_height="233dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/popcorn" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="122dp"
+                    android:layout_marginBottom="200dp"
+                    android:fontFamily="@font/kanit_bold_italic"
+                    android:text="Exclusive Offers"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageView24"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="49dp"
+                    android:layout_marginTop="29dp"
+                    android:layout_marginEnd="48dp"
+                    android:fontFamily="@font/kanit_bold_italic"
+                    android:text="10% | 15%"
+                    android:textSize="30sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView24"
+                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="49dp"
+                    android:layout_marginTop="33dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_marginBottom="44dp"
+                    android:backgroundTint="#3F51B5"
+                    android:text="Book your tickets Now"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.51"
+                    app:layout_constraintStart_toEndOf="@+id/imageView24"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/nowshowing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kanit_italic"
+                android:text="   Coming Soon"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="531dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="20sp"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="70sp"
+                    android:orientation="horizontal">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="30sp"
+                        android:orientation="vertical"
+                        app:cardBackgroundColor="#00FFFFFF"
+                        app:cardCornerRadius="20sp"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout20_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:layout_constraintEnd_toEndOf="@+id/linearLayout3_1"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="parent">
+
+                            <ImageView
+                                android:id="@+id/imageView17"
+                                android:layout_width="300sp"
+                                android:layout_height="400sp"
+                                android:scaleType="fitCenter"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/dune" />
+
+                            <TextView
+                                android:id="@+id/textView9_8"
+                                android:layout_width="292dp"
+                                android:layout_height="56dp"
+                                android:layout_marginEnd="4dp"
+                                android:padding="10sp"
+                                android:text="Dune Part 2"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="30sp"
+                        android:orientation="vertical"
+                        app:cardBackgroundColor="#00FFFFFF"
+                        app:cardCornerRadius="20sp"
+                        app:layout_constraintEnd_toStartOf="@+id/constraintLayout20_3"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout26_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:layout_constraintEnd_toEndOf="@+id/linearLayout3_1"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="parent">
+
+                            <ImageView
+                                android:id="@+id/imageView16_3"
+                                android:layout_width="300sp"
+                                android:layout_height="400sp"
+                                android:scaleType="fitCenter"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/dune" />
+
+                            <TextView
+                                android:id="@+id/textView9_1"
+                                android:layout_width="292dp"
+                                android:layout_height="56dp"
+                                android:layout_marginEnd="4dp"
+                                android:padding="10sp"
+                                android:text="Dune Part 2"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/imageView16_3" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="300sp"
+                        android:layout_height="450sp"
+                        android:layout_marginRight="30sp"
+                        android:orientation="vertical"
+                        app:cardBackgroundColor="#00FFFFFF"
+                        app:cardCornerRadius="20sp"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout29_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:layout_constraintEnd_toEndOf="@+id/linearLayout3_1"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="parent">
+
+                            <ImageView
+                                android:id="@+id/imageView18"
+                                android:layout_width="300sp"
+                                android:layout_height="400sp"
+                                android:scaleType="fitCenter"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/dune" />
+
+                            <TextView
+                                android:id="@+id/textView9_2"
+                                android:layout_width="292dp"
+                                android:layout_height="56dp"
+                                android:layout_marginEnd="4dp"
+                                android:padding="10sp"
+                                android:text="Dune Part 2"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="387dp"
+        android:layout_height="151dp"
+        android:background="@drawable/blackbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="178dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="98dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/kanit_light"
+            android:text="Luqman Booso"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView21"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="108dp"
+            android:layout_height="129dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.126"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="408dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="3dp"
+        android:background="@drawable/blackbox"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView41"
+            android:layout_width="2dp"
+            android:layout_height="22sp"
+            android:layout_marginTop="20sp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/imageView40"
+            android:layout_width="22dp"
+            android:layout_height="22sp"
+            android:layout_marginTop="20sp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/film" />
+
+        <ImageView
+            android:id="@+id/imageView39"
+            android:layout_width="0dp"
+            android:layout_height="22sp"
+            android:layout_marginTop="20sp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/user" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="424dp"
+        android:layout_height="1717dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
