@@ -1,6 +1,7 @@
 package com.example.cinetix
 
 import android.content.Intent
+import android.media.Image
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
@@ -26,6 +27,15 @@ class paymentmethod : AppCompatActivity() {
             val intent = Intent(this, paymentconfirm::class.java)
             startActivity(intent)
         }
+
+
+        val close: ImageView = findViewById(R.id.imageView57)
+        close.setOnClickListener {
+            val intent = Intent(this, Homepage::class.java)
+            startActivity(intent)
+        }
+
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

@@ -5,92 +5,181 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dark_gray"
+    android:background="@color/black"
     tools:context=".cancelTicket">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="413dp"
-        android:layout_height="498dp"
-        app:cardBackgroundColor="#665C5C"
+    <ImageView
+        android:id="@+id/imageView45"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:padding="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/kanit_italic"
+        android:text="@string/cancelb"
+        android:textColor="@color/white"
+        android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="173dp">
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="70dp"
+        app:cardBackgroundColor="#655B5B"
+        app:cardCornerRadius="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView36">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="16dp">
 
             <TextView
-                android:id="@+id/textView36"
-                android:layout_width="wrap_content"
+                android:id="@+id/textView22"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="TextView"
-                tools:layout_editor_absoluteX="135dp"
-                tools:layout_editor_absoluteY="47dp" />
-
-            <TextView
-                android:id="@+id/textView37"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TextView"
-                tools:layout_editor_absoluteX="133dp"
-                tools:layout_editor_absoluteY="77dp" />
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/kanit_light"
+                android:text="Please refer the reason for Cancellation"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <RadioGroup
-                android:layout_width="209dp"
-                android:layout_height="213dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/radioGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@android:color/transparent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.393"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.501">
+                app:layout_constraintTop_toBottomOf="@+id/textView22">
 
                 <RadioButton
                     android:id="@+id/radioButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="RadioButton" />
+                    android:layout_marginBottom="8dp"
+                    android:buttonTint="#FFC107"
+                    android:fontFamily="@font/kanit_light"
+                    android:paddingStart="8dp"
+                    android:text="I have a better Deal"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
 
                 <RadioButton
                     android:id="@+id/radioButton2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="RadioButton" />
+                    android:layout_marginBottom="8dp"
+                    android:buttonTint="#FFC107"
+                    android:fontFamily="@font/kanit_light"
+                    android:paddingStart="8dp"
+                    android:text="Some other work, Busy"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
 
                 <RadioButton
                     android:id="@+id/radioButton3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="RadioButton" />
+                    android:layout_marginBottom="8dp"
+                    android:buttonTint="#FFC107"
+                    android:fontFamily="@font/kanit_light"
+                    android:paddingStart="8dp"
+                    android:text="I want to book another movie"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
 
                 <RadioButton
                     android:id="@+id/radioButton4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="RadioButton" />
+                    android:layout_marginBottom="8dp"
+                    android:buttonTint="#FFC107"
+                    android:fontFamily="@font/kanit_light"
+                    android:paddingStart="8dp"
+                    android:text="Location is too far"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#FFC107"
+                    android:fontFamily="@font/kanit_light"
+                    android:paddingStart="8dp"
+                    android:text="Another Reason"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
             </RadioGroup>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="408dp"
+                android:id="@+id/textInputLayout"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                tools:layout_editor_absoluteX="1dp"
-                tools:layout_editor_absoluteY="381dp">
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:hint="Share Anything With Us"
+                android:textColorHint="#CCCCCC"
+                app:boxBackgroundColor="#4D4D4D"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="#FFC107"
+                app:boxStrokeWidth="1dp"
+                app:hintTextColor="#FFC107"
+                app:layout_constraintBottom_toTopOf="@+id/addreview"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+                app:layout_constraintVertical_bias="0.0">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="hint" />
+                    android:layout_height="100dp"
+                    android:fontFamily="@font/kanit_light"
+                    android:gravity="top|start"
+                    android:textColor="@color/white" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
-                android:id="@+id/button15"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/addreview"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginHorizontal="8dp"
+                android:backgroundTint="@color/orange"
+                android:fontFamily="@font/kanit_bold"
                 android:text="Cancel Booking"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:cornerRadius="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="442dp" />
+                app:layout_constraintStart_toStartOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

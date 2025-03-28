@@ -13,6 +13,35 @@
         android:theme="@style/Theme.Cinetix"
         tools:targetApi="31">
         <activity
+            android:name=".RecoverPassword"
+            android:exported="false" />
+        <activity
+            android:name=".change_password"
+            android:exported="false" />
+        <activity
+            android:name=".privacy_policy"
+            android:exported="false" />
+        <activity
+            android:name=".MovieDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Comingsoon"
+            android:exported="false" />
+        <activity
+            android:name=".TicketSummary"
+            android:exported="false" />
+        <activity
+            android:name=".reviews"
+            android:exported="false" />
+        <activity
+            android:name=".editprofile"
+            android:exported="false"
+            android:theme="@style/Theme.Cinetix" />
+        <activity
+            android:name=".review"
+            android:exported="false"
+            android:theme="@style/Theme.Cinetix" />
+        <activity
             android:name=".bookinghall"
             android:exported="false" />
         <activity
@@ -34,10 +63,6 @@
         <activity
             android:name=".paymentconfirm"
             android:exported="false" />
-        <activity
-            android:name=".editprofile"
-            android:exported="false"
-            android:theme="@style/Theme.Cinetix" />
         <activity
             android:name=".paymentmethod"
             android:exported="false"

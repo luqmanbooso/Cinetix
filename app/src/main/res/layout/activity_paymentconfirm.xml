@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dark_gray"
+    android:background="@color/black"
     tools:context=".paymentconfirm">
 
     <TextView
@@ -14,19 +14,21 @@
         android:layout_height="40dp"
         android:layout_margin="5sp"
         android:layout_marginTop="15dp"
+        android:layout_marginBottom="22dp"
         android:fontFamily="@font/kanit_italic"
         android:text="Payment Successful"
         android:textAlignment="center"
         android:textColor="@color/orange"
         android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView34"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView58" />
 
     <ImageView
         android:id="@+id/imageView58"
-        android:layout_width="299dp"
-        android:layout_height="249dp"
+        android:layout_width="188dp"
+        android:layout_height="147dp"
         android:layout_marginTop="116dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,21 +39,29 @@
         android:id="@+id/textView34"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
         android:layout_marginBottom="280dp"
         android:text="Your card has been successfully charged"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
 
     <Button
         android:id="@+id/button14"
         android:layout_width="245dp"
         android:layout_height="55dp"
+        android:layout_marginStart="88dp"
         android:layout_marginTop="19dp"
         android:layout_marginEnd="78dp"
+        android:backgroundTint="@color/black"
         android:text="View Ticket"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView34"
+        app:strokeColor="@color/orange"
+        app:strokeWidth="2sp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,7 @@ package com.example.cinetix
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -18,6 +19,13 @@ class Onboardsc2 : AppCompatActivity() {
         findViewById<Button>(R.id.next1).setOnClickListener {
 
             val intent = Intent(this, Onboardsc3::class.java)
+            startActivity(intent)
+        }
+
+        val skip: Button = findViewById(R.id.button2)
+
+        skip.setOnClickListener{
+            val intent = Intent(this,Mainpage::class.java)
             startActivity(intent)
         }
 

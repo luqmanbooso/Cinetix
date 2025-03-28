@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="100dp"
+    android:viewportWidth="200"
+    android:viewportHeight="100">
+
+    <!-- Define a curve using the <path> element -->
+    <path
+        android:pathData="M0,30 C50,0 150,0 200,30"
+        android:strokeWidth="2"
+        android:strokeColor="#808080" /> <!-- Gray color for the curve -->
+</vector>

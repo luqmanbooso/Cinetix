@@ -5,8 +5,34 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dark_gray"
+    android:background="@color/black"
     tools:context=".bookSeat">
+
+    <TextView
+        android:id="@+id/pageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="14dp"
+        android:fontFamily="@font/kanit_italic"
+        android:text="Book Your Seats"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <ImageView
+        android:id="@+id/imageView62"
+        android:layout_width="41dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:padding="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
@@ -71,13 +97,15 @@
                     android:id="@+id/imageView6"
                     android:layout_width="40dp"
                     android:layout_height="30sp"
-                    app:srcCompat="@drawable/seatwhite" />
+                    app:srcCompat="@drawable/seatred"
+                    app:tint="#F44336"/>
 
                 <ImageView
                     android:id="@+id/imageView7"
                     android:layout_width="40dp"
                     android:layout_height="30sp"
-                    app:srcCompat="@drawable/seatwhite" />
+                    app:srcCompat="@drawable/seatred"
+                    app:tint="#F44336" />
 
                 <ImageView
                     android:id="@+id/imageView8"
@@ -107,13 +135,15 @@
                     android:id="@+id/imageView11"
                     android:layout_width="40dp"
                     android:layout_height="30sp"
-                    app:srcCompat="@drawable/seatwhite" />
+                    app:srcCompat="@drawable/seatred"
+                    app:tint="#F44336" />
 
                 <ImageView
                     android:id="@+id/imageView12"
                     android:layout_width="40dp"
                     android:layout_height="30sp"
-                    app:srcCompat="@drawable/seatwhite" />
+                    app:srcCompat="@drawable/seatred"
+                    app:tint="#F44336" />
             </TableRow>
 
             <TableRow
@@ -137,7 +167,8 @@
                     android:id="@+id/imageView15"
                     android:layout_width="40dp"
                     android:layout_height="30sp"
-                    app:srcCompat="@drawable/seatwhite" />
+                    app:srcCompat="@drawable/seatred"
+                    app:tint="#F44336" />
 
                 <ImageView
                     android:id="@+id/imageView16"
@@ -161,7 +192,8 @@
                     android:id="@+id/imageView18"
                     android:layout_width="40dp"
                     android:layout_height="30sp"
-                    app:srcCompat="@drawable/seatwhite" />
+                    app:srcCompat="@drawable/seatred"
+                    app:tint="#F44336" />
 
                 <ImageView
                     android:id="@+id/imageView19"
@@ -173,7 +205,8 @@
                     android:id="@+id/imageView20"
                     android:layout_width="40dp"
                     android:layout_height="30sp"
-                    app:srcCompat="@drawable/seatwhite" />
+                    app:srcCompat="@drawable/seatred"
+                    app:tint="#F44336" />
             </TableRow>
 
         </TableLayout>
@@ -214,7 +247,8 @@
                     android:id="@+id/imageView24"
                     android:layout_width="40dp"
                     android:layout_height="30sp"
-                    app:srcCompat="@drawable/seatwhite" />
+                    app:srcCompat="@drawable/seatred"
+                    app:tint="#F44336" />
             </TableRow>
 
             <TableRow
@@ -232,13 +266,15 @@
                     android:id="@+id/imageView26"
                     android:layout_width="40dp"
                     android:layout_height="30sp"
-                    app:srcCompat="@drawable/seatwhite" />
+                    app:srcCompat="@drawable/seatyellow"
+                    app:tint="#FFC107" />
 
                 <ImageView
                     android:id="@+id/imageView27"
                     android:layout_width="40dp"
                     android:layout_height="30sp"
-                    app:srcCompat="@drawable/seatwhite" />
+                    app:srcCompat="@drawable/seatyellow"
+                    app:tint="#FFC107" />
 
                 <ImageView
                     android:id="@+id/imageView28"
@@ -256,19 +292,22 @@
                     android:id="@+id/imageView29"
                     android:layout_width="40sp"
                     android:layout_height="30sp"
-                    app:srcCompat="@drawable/seatwhite" />
+                    app:srcCompat="@drawable/seatyellow"
+                    app:tint="#FFC107" />
 
                 <ImageView
                     android:id="@+id/imageView30"
                     android:layout_width="40dp"
                     android:layout_height="30sp"
-                    app:srcCompat="@drawable/seatwhite" />
+                    app:srcCompat="@drawable/seatyellow"
+                    app:tint="#FFC107" />
 
                 <ImageView
                     android:id="@+id/imageView31"
                     android:layout_width="40dp"
                     android:layout_height="30sp"
-                    app:srcCompat="@drawable/seatwhite" />
+                    app:srcCompat="@drawable/seatyellow"
+                    app:tint="#FFC107" />
 
                 <ImageView
                     android:id="@+id/imageView32"
@@ -292,7 +331,8 @@
                     android:id="@+id/imageView34"
                     android:layout_width="40dp"
                     android:layout_height="30sp"
-                    app:srcCompat="@drawable/seatwhite" />
+                    app:srcCompat="@drawable/seatred"
+                    app:tint="#F44336" />
 
                 <ImageView
                     android:id="@+id/imageView35"
@@ -334,7 +374,8 @@
                     android:id="@+id/imageView40"
                     android:layout_width="40dp"
                     android:layout_height="30sp"
-                    app:srcCompat="@drawable/seatwhite" />
+                    app:srcCompat="@drawable/seatred"
+                    app:tint="#F44336" />
             </TableRow>
 
         </TableLayout>
@@ -348,6 +389,8 @@
             android:layout_marginEnd="161dp"
             android:text="H"
             android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
             app:layout_constraintEnd_toStartOf="@+id/textView33"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
@@ -356,55 +399,226 @@
             android:id="@+id/textView33"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="161dp"
+            android:layout_marginStart="162dp"
             android:layout_marginTop="13dp"
-            android:layout_marginBottom="39dp"
+            android:layout_marginBottom="173dp"
             android:text="J"
             android:textColor="@color/white"
-            app:layout_constraintBottom_toTopOf="@+id/button10"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView32"
-            app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout2"
+            app:layout_constraintVertical_bias="0.0" />
 
         <androidx.cardview.widget.CardView
-            android:layout_width="411dp"
-            android:layout_height="36dp"
-            app:cardBackgroundColor="#88FFC107"
-            tools:layout_editor_absoluteY="251dp">
+            android:id="@+id/cardView5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="156dp"
+            android:elevation="8dp"
+            android:padding="16dp"
+            app:cardBackgroundColor="@color/yellow"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout15">
 
-            <TextView
-                android:id="@+id/textView29"
-                android:layout_width="411dp"
-                android:layout_height="40dp"
-                android:layout_margin="5sp"
-                android:fontFamily="@font/kanit_italic"
-                android:text="05:00"
-                android:textAlignment="center"
-                android:textSize="20sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_timer"
+                    app:tint="#1A1A1A"/>
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kanit_italic"
+                    android:text="@string/remaintime"
+                    android:textColor="#1A1A1A"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <Button
-            android:id="@+id/button10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="109dp"
-            android:layout_marginTop="39dp"
-            android:layout_marginEnd="129dp"
-            android:layout_marginBottom="86dp"
+            android:id="@+id/tiksum"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginBottom="56dp"
             android:backgroundTint="@color/orange"
-            android:text="CONTINUE Rs.3700"
+            android:text="@string/cont"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/kanit_bold"
+            app:cornerRadius="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView32" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            app:layout_constraintWidth_percent="0.6" />
 
-    <ImageView
-        android:id="@+id/imageView102"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/recdune" />
+        <ImageView
+            android:id="@+id/imageView51"
+            android:layout_width="347dp"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="60dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView5"
+            app:srcCompat="@drawable/hall" />
+
+        <LinearLayout
+            android:id="@+id/seatLegend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/textView32">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView52"
+                    android:layout_width="21dp"
+                    android:layout_height="22dp"
+                    app:srcCompat="@drawable/seatwhite" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:text="Available"
+                    android:textColor="#CCCCCC" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView53"
+                    android:layout_width="21dp"
+                    android:layout_height="22dp"
+                    app:srcCompat="@drawable/seatred"
+                    app:tint="#F44336" />
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:text="Booked"
+                    android:textColor="#CCCCCC" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView54"
+                    android:layout_width="21dp"
+                    android:layout_height="22dp"
+                    app:srcCompat="@drawable/seatyellow"
+                    app:tint="#FFC107" />
+
+                <TextView
+                    android:id="@+id/textView45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:text="Selected"
+                    android:textColor="#CCCCCC" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="64dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/time1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#333333"
+                android:text="14:30"
+                android:textColor="@color/white"
+                app:cornerRadius="8dp" />
+
+            <Button
+                android:id="@+id/time2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/alternateorange"
+                android:text="17:30"
+                android:textColor="@color/white"
+                app:cornerRadius="8dp" />
+
+            <Button
+                android:id="@+id/time3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#333333"
+                android:text="20:30"
+                android:textColor="@color/white"
+                app:cornerRadius="8dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/screenLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="SCREEN"
+            android:textColor="#78909C"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@id/imageView51"
+            app:layout_constraintStart_toStartOf="@id/imageView51"
+            app:layout_constraintTop_toBottomOf="@id/imageView51" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

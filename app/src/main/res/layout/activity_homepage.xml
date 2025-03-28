@@ -5,495 +5,740 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dark_gray"
+    android:background="@color/black"
     tools:context=".Homepage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="@drawable/blackbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img21"
+            android:layout_width="83dp"
+            android:layout_height="97dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/edittext_background"
+            app:iconifiedByDefault="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img21"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            app:queryHint="Search..." />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="412dp"
-        android:layout_height="718dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="200dp"
+        android:layout_width="416dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout3">
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="0sp"
-            android:baselineAligned="false"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:scrollbarSize="0dp">
+            android:padding="16dp">
 
             <TextView
                 android:id="@+id/nowshowing2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/kanit_italic"
-                android:text="     Now Showing"
+                android:text="@string/nows"
                 android:textColor="@color/white"
                 android:textSize="26sp" />
 
+            <TextView
+                android:id="@+id/nowshowingDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Take a look at the best grossing movies right now"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
             <HorizontalScrollView
                 android:layout_width="match_parent"
-                android:layout_height="519dp"
-                android:layout_marginBottom="20sp">
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:scrollbars="none"
+                android:clipToPadding="false">
 
                 <LinearLayout
                     android:id="@+id/linearLayout3_1"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="20sp"
-                    android:layout_marginTop="70sp"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-
                     <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginRight="30sp"
-                        android:orientation="vertical"
-                        app:cardBackgroundColor="#00FFFFFF"
-                        app:cardCornerRadius="20sp"
-                        app:layout_constraintHorizontal_bias="0.5"
-                        app:layout_constraintStart_toStartOf="parent">
+                        android:layout_width="220dp"
+                        android:layout_height="380dp"
+                        android:layout_marginEnd="16dp"
+                        app:cardBackgroundColor="#1E1E1E"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="8dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
-                            android:id="@+id/constraintLayout26"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            app:layout_constraintEnd_toEndOf="@+id/linearLayout3_1"
-                            app:layout_constraintHorizontal_bias="0.5"
-                            app:layout_constraintStart_toEndOf="parent">
+                            android:layout_height="match_parent">
 
                             <ImageView
-                                android:id="@+id/imageView19"
-                                android:layout_width="300sp"
-                                android:layout_height="400sp"
-                                android:layout_marginEnd="1dp"
-                                android:scaleType="fitCenter"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/dune" />
-
-                            <TextView
-                                android:id="@+id/textView9_3"
-                                android:layout_width="292dp"
-                                android:layout_height="56dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
-                                android:padding="10sp"
-                                android:text="Dune Part 2"
-                                android:textAlignment="center"
-                                android:textColor="@color/white"
-                                android:textSize="24sp"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginRight="30sp"
-                        android:orientation="vertical"
-                        app:cardBackgroundColor="#00FFFFFF"
-                        app:cardCornerRadius="20sp"
-                        app:layout_constraintHorizontal_bias="0.5"
-                        app:layout_constraintStart_toStartOf="parent">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:id="@+id/constraintLayout27"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            app:layout_constraintHorizontal_bias="0.5"
-                            app:layout_constraintStart_toEndOf="parent">
-
-                            <ImageView
-                                android:id="@+id/imageView16_1"
-                                android:layout_width="300sp"
-                                android:layout_height="400sp"
-                                android:scaleType="fitCenter"
+                                android:id="@+id/moviePoster1"
+                                android:layout_width="match_parent"
+                                android:layout_height="300dp"
+                                android:scaleType="centerCrop"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
                                 app:srcCompat="@drawable/dune" />
 
                             <TextView
-                                android:id="@+id/textView9_5"
-                                android:layout_width="292dp"
-                                android:layout_height="56dp"
-                                android:layout_marginEnd="4dp"
-                                android:padding="10sp"
-                                android:text="Dune Part 2"
-                                android:textAlignment="center"
+                                android:id="@+id/movieTitle1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/kanit_bold"
+                                android:text="@string/dunename"
                                 android:textColor="@color/white"
-                                android:textSize="24sp"
+                                android:textSize="18sp"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/moviePoster1" />
 
+                            <TextView
+                                android:id="@+id/movieTime1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/dunetime"
+                                android:textColor="#AAAAAA"
+                                android:textSize="14sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/movieTitle1" />
+
+                            <RatingBar
+                                android:id="@+id/ratingBar1"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:progressTint="@color/yellow"
+                                android:rating="4.5"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/movieTime1" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="300sp"
-                        android:layout_height="450sp"
-                        android:layout_marginRight="30sp"
-                        android:orientation="vertical"
-                        app:cardBackgroundColor="#00FFFFFF"
-                        app:cardCornerRadius="20sp"
-                        app:layout_constraintHorizontal_bias="0.5"
-                        app:layout_constraintStart_toStartOf="parent">
+                        android:layout_width="220dp"
+                        android:layout_height="380dp"
+                        android:layout_marginEnd="16dp"
+                        app:cardBackgroundColor="#1E1E1E"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="8dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
-                            android:id="@+id/constraintLayout28"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
                             <ImageView
-                                android:id="@+id/imageView16_2"
-                                android:layout_width="300sp"
-                                android:layout_height="400sp"
-                                android:scaleType="fitCenter"
+                                android:id="@+id/moviePoster2"
+                                android:layout_width="match_parent"
+                                android:layout_height="300dp"
+                                android:scaleType="centerCrop"
                                 app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/dune" />
+                                app:srcCompat="@drawable/cap" />
 
                             <TextView
-                                android:id="@+id/textView9_6"
-                                android:layout_width="292dp"
-                                android:layout_height="56dp"
-                                android:layout_marginEnd="4dp"
-                                android:padding="10sp"
-                                android:text="Dune Part 2"
-                                android:textAlignment="center"
+                                android:id="@+id/movieTitle2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/kanit_bold"
+                                android:text="@string/capname"
                                 android:textColor="@color/white"
-                                android:textSize="24sp"
+                                android:textSize="18sp"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/imageView16_2" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/moviePoster2" />
 
+                            <TextView
+                                android:id="@+id/movieTime2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/captime"
+                                android:textColor="#AAAAAA"
+                                android:textSize="14sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/movieTitle2" />
+
+                            <RatingBar
+                                android:id="@+id/ratingBar2"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:progressTint="@color/yellow"
+                                android:rating="4.5"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/movieTime2" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
 
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="220dp"
+                        android:layout_height="380dp"
+                        android:layout_marginEnd="16dp"
+                        app:cardBackgroundColor="#1E1E1E"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="8dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/moviePoster10"
+                                android:layout_width="match_parent"
+                                android:layout_height="300dp"
+                                android:scaleType="centerCrop"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/sw" />
+
+                            <TextView
+                                android:id="@+id/movieTitle10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/kanit_bold"
+                                android:text="@string/swname"
+                                android:textColor="@color/white"
+                                android:textSize="18sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/moviePoster10" />
+
+                            <TextView
+                                android:id="@+id/movieTime10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/swtime"
+                                android:textColor="#AAAAAA"
+                                android:textSize="14sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/movieTitle10" />
+
+                            <RatingBar
+                                android:id="@+id/ratingBar3"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:progressTint="@color/yellow"
+                                android:rating="4.5"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/movieTime10" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
                 </LinearLayout>
             </HorizontalScrollView>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="wrap_content"
-                android:layout_height="251dp"
-                android:layout_marginBottom="20sp"
-                android:background="@drawable/promobox"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="464dp">
-
-                <ImageView
-                    android:id="@+id/imageView24"
-                    android:layout_width="195dp"
-                    android:layout_height="233dp"
-                    android:layout_marginStart="4dp"
-                    android:layout_weight="1"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/popcorn" />
-
-                <TextView
-                    android:id="@+id/textView13"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginEnd="122dp"
-                    android:layout_marginBottom="200dp"
-                    android:fontFamily="@font/kanit_bold_italic"
-                    android:text="Exclusive Offers"
-                    android:textSize="24sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toEndOf="@+id/imageView24"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0" />
-
-                <TextView
-                    android:id="@+id/textView15"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="49dp"
-                    android:layout_marginTop="29dp"
-                    android:layout_marginEnd="48dp"
-                    android:fontFamily="@font/kanit_bold_italic"
-                    android:text="10% | 15%"
-                    android:textSize="30sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/imageView24"
-                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
-
-                <Button
-                    android:id="@+id/button4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="49dp"
-                    android:layout_marginTop="33dp"
-                    android:layout_marginEnd="60dp"
-                    android:layout_marginBottom="44dp"
-                    android:backgroundTint="#3F51B5"
-                    android:text="Book your tickets Now"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.51"
-                    app:layout_constraintStart_toEndOf="@+id/imageView24"
-                    app:layout_constraintTop_toBottomOf="@+id/textView15"
-                    app:layout_constraintVertical_bias="0.0" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
             <TextView
-                android:id="@+id/nowshowing"
-                android:layout_width="match_parent"
+                android:id="@+id/comingSoon"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/kanit_italic"
-                android:text="   Coming Soon"
+                android:text="@string/comsoon"
                 android:textColor="@color/white"
                 android:textSize="26sp" />
 
+            <TextView
+                android:id="@+id/comingSoonDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Get ready for the upcoming blockbusters"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
             <HorizontalScrollView
                 android:layout_width="match_parent"
-                android:layout_height="531dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="20sp"
-                app:layout_constraintEnd_toEndOf="parent">
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:scrollbars="none"
+                android:clipToPadding="false">
 
                 <LinearLayout
                     android:id="@+id/linearLayout3_2"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="20sp"
-                    android:layout_marginTop="70sp"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-
                     <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginRight="30sp"
-                        android:orientation="vertical"
-                        app:cardBackgroundColor="#00FFFFFF"
-                        app:cardCornerRadius="20sp"
-                        app:layout_constraintHorizontal_bias="0.5"
-                        app:layout_constraintStart_toStartOf="parent">
+                        android:layout_width="220dp"
+                        android:layout_height="380dp"
+                        android:layout_marginEnd="16dp"
+                        app:cardBackgroundColor="#1E1E1E"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="8dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
-                            android:id="@+id/constraintLayout20_1"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            app:layout_constraintEnd_toEndOf="@+id/linearLayout3_1"
-                            app:layout_constraintHorizontal_bias="0.5"
-                            app:layout_constraintStart_toEndOf="parent">
+                            android:layout_height="match_parent">
 
                             <ImageView
-                                android:id="@+id/imageView17"
-                                android:layout_width="300sp"
-                                android:layout_height="400sp"
-                                android:scaleType="fitCenter"
+                                android:id="@+id/moviePoster3"
+                                android:layout_width="match_parent"
+                                android:layout_height="300dp"
+                                android:scaleType="centerCrop"
                                 app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/dune" />
+                                app:srcCompat="@drawable/mine" />
 
                             <TextView
-                                android:id="@+id/textView9_8"
-                                android:layout_width="292dp"
-                                android:layout_height="56dp"
-                                android:layout_marginEnd="4dp"
-                                android:padding="10sp"
-                                android:text="Dune Part 2"
-                                android:textAlignment="center"
+                                android:id="@+id/movieTitle3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/kanit_bold"
+                                android:text="@string/mcname"
                                 android:textColor="@color/white"
-                                android:textSize="24sp"
+                                android:textSize="18sp"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/imageView17" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/moviePoster3" />
 
+                            <TextView
+                                android:id="@+id/movieTime3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/mcdate"
+                                android:textColor="#AAAAAA"
+                                android:textSize="14sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/movieTitle3" />
+
+                            <TextView
+                                android:id="@+id/movieRating3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/mcgenre"
+                                android:textColor="#AAAAAA"
+                                android:textSize="14sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/movieTime3" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginRight="30sp"
-                        android:orientation="vertical"
-                        app:cardBackgroundColor="#00FFFFFF"
-                        app:cardCornerRadius="20sp"
-                        app:layout_constraintEnd_toStartOf="@+id/constraintLayout20_3"
-                        app:layout_constraintHorizontal_bias="0.5"
-                        app:layout_constraintStart_toStartOf="parent">
+                        android:layout_width="220dp"
+                        android:layout_height="380dp"
+                        android:layout_marginEnd="16dp"
+                        app:cardBackgroundColor="#1E1E1E"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="8dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
-                            android:id="@+id/constraintLayout26_4"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            app:layout_constraintEnd_toEndOf="@+id/linearLayout3_1"
-                            app:layout_constraintHorizontal_bias="0.5"
-                            app:layout_constraintStart_toEndOf="parent">
+                            android:layout_height="match_parent">
 
                             <ImageView
-                                android:id="@+id/imageView16_3"
-                                android:layout_width="300sp"
-                                android:layout_height="400sp"
-                                android:scaleType="fitCenter"
+                                android:id="@+id/moviePoster4"
+                                android:layout_width="match_parent"
+                                android:layout_height="300dp"
+                                android:scaleType="centerCrop"
                                 app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/dune" />
+                                app:srcCompat="@drawable/mi" />
 
                             <TextView
-                                android:id="@+id/textView9_1"
-                                android:layout_width="292dp"
-                                android:layout_height="56dp"
-                                android:layout_marginEnd="4dp"
-                                android:padding="10sp"
-                                android:text="Dune Part 2"
-                                android:textAlignment="center"
+                                android:id="@+id/movieTitle4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/kanit_bold"
+                                android:text="@string/miname"
                                 android:textColor="@color/white"
-                                android:textSize="24sp"
+                                android:textSize="18sp"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/imageView16_3" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="300sp"
-                        android:layout_height="450sp"
-                        android:layout_marginRight="30sp"
-                        android:orientation="vertical"
-                        app:cardBackgroundColor="#00FFFFFF"
-                        app:cardCornerRadius="20sp"
-                        app:layout_constraintHorizontal_bias="0.5"
-                        app:layout_constraintStart_toStartOf="parent">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:id="@+id/constraintLayout29_1"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            app:layout_constraintEnd_toEndOf="@+id/linearLayout3_1"
-                            app:layout_constraintHorizontal_bias="0.5"
-                            app:layout_constraintStart_toEndOf="parent">
-
-                            <ImageView
-                                android:id="@+id/imageView18"
-                                android:layout_width="300sp"
-                                android:layout_height="400sp"
-                                android:scaleType="fitCenter"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/dune" />
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/moviePoster4" />
 
                             <TextView
-                                android:id="@+id/textView9_2"
-                                android:layout_width="292dp"
-                                android:layout_height="56dp"
-                                android:layout_marginEnd="4dp"
-                                android:padding="10sp"
-                                android:text="Dune Part 2"
-                                android:textAlignment="center"
-                                android:textColor="@color/white"
-                                android:textSize="24sp"
+                                android:id="@+id/movieTime4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/midate"
+                                android:textColor="#AAAAAA"
+                                android:textSize="14sp"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/imageView18" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/movieTitle4" />
 
+                            <TextView
+                                android:id="@+id/movieRating4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/migenre"
+                                android:textColor="#AAAAAA"
+                                android:textSize="14sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/movieTime4" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
 
                 </LinearLayout>
             </HorizontalScrollView>
 
+            <TextView
+                android:id="@+id/cinetixHalls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kanit_italic"
+                android:text="Cinetix Halls"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/cinetixHallsDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Not Cornered to One, "
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:background="#1A1A1A"
+                android:layout_marginBottom="16dp"
+                android:elevation="4dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/framePanel"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="#151515"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/kanit_bold"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:text="Explore Our Premium Halls"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+                </androidx.cardview.widget.CardView>
+
+                <HorizontalScrollView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:scrollbars="none"
+                    android:padding="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/framePanel"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout3_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="240dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="12dp"
+                            app:cardBackgroundColor="#202020"
+                            app:cardCornerRadius="12dp"
+                            app:cardElevation="4dp">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/hallPoster1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="200dp"
+                                    android:scaleType="centerCrop"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/hll" />
+
+                                <TextView
+                                    android:id="@+id/hallTitle1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="@font/kanit_italic"
+                                    android:text="@string/challcom"
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/hallPoster1" />
+
+                                <TextView
+                                    android:id="@+id/hallDescription1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginEnd="12dp"
+                                    android:text="Experience the best sound and picture quality."
+                                    android:textColor="#AAAAAA"
+                                    android:textSize="14sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/hallTitle1" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="240dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="12dp"
+                            app:cardBackgroundColor="#202020"
+                            app:cardCornerRadius="12dp"
+                            app:cardElevation="4dp">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/hallPoster2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="200dp"
+                                    android:scaleType="centerCrop"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/hlltwo" />
+
+                                <TextView
+                                    android:id="@+id/hallTitle2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="@font/kanit_italic"
+                                    android:text="@string/challnug"
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/hallPoster2" />
+
+                                <TextView
+                                    android:id="@+id/hallDescription2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginEnd="12dp"
+                                    android:text="Enjoy the latest movies in comfort."
+                                    android:textColor="#AAAAAA"
+                                    android:textSize="14sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/hallTitle2" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="240dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="12dp"
+                            app:cardBackgroundColor="#202020"
+                            app:cardCornerRadius="12dp"
+                            app:cardElevation="4dp">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/hallPoster3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="200dp"
+                                    android:scaleType="centerCrop"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/hllthree" />
+
+                                <TextView
+                                    android:id="@+id/hallTitle3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="@font/kanit_italic"
+                                    android:text="@string/challgam"
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/hallPoster3" />
+
+                                <TextView
+                                    android:id="@+id/hallDescription3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginEnd="12dp"
+                                    android:text="Experience the best sound and picture quality."
+                                    android:textColor="#AAAAAA"
+                                    android:textSize="14sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/hallTitle3" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
-        android:layout_width="387dp"
-        android:layout_height="151dp"
-        android:background="@drawable/blackbox"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="178dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="98dp"
-            android:layout_marginTop="48dp"
-            android:layout_marginEnd="32dp"
-            android:fontFamily="@font/kanit_light"
-            android:text="Luqman Booso"
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/imageView21"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/imageView21"
-            android:layout_width="108dp"
-            android:layout_height="129dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.126"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/logo" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="408dp"
+        android:layout_width="match_parent"
         android:layout_height="67dp"
-        android:layout_marginStart="6dp"
-        android:layout_marginEnd="3dp"
-        android:background="@drawable/blackbox"
+        android:background="@drawable/bottom_nav_background"
         android:orientation="horizontal"
+        android:padding="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <ImageView
-            android:id="@+id/imageView41"
-            android:layout_width="2dp"
-            android:layout_height="22sp"
-            android:layout_marginTop="20sp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/home" />
-
-        <ImageView
-            android:id="@+id/imageView40"
-            android:layout_width="22dp"
-            android:layout_height="22sp"
-            android:layout_marginTop="20sp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/film" />
-
-        <ImageView
-            android:id="@+id/imageView39"
+        <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="22sp"
-            android:layout_marginTop="20sp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            app:srcCompat="@drawable/user" />
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/homeIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/home"
+                android:tint="@android:color/holo_orange_dark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ticketIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ticket"
+                android:tint="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ticket"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/movieIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/film"
+                android:tint="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Movie"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/profileIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/user"
+                android:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
     </LinearLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout3"
-        android:layout_width="424dp"
-        android:layout_height="1717dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

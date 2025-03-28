@@ -9,46 +9,90 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
-    <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="cast_member">Cast Member</string>
+    <string name="home">Home</string>
+    <string name="ticket">Ticket</string>
+    <string name="movie">Movie</string>
+    <string name="profile">Profile</string>
+    <string name="email_icon">Email Icon</string>
+    <string name="show_password">Show Password</string>
 
-    <string name="lorem_ipsum">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
-        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
-        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
-        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
-        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
-        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
-        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
-        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
-        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
-        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
-        bibendum, vel congue leo egestas.\n\n
-        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
-        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
-        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
-        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
-        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
-        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
-        est.\n\n
-        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
-        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
-        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
-        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
-        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
-        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
-        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
-        convallis.\n\n
-        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
-        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
-        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
-        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
-        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
-        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
-        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
-    </string>
+    <string name="cacc">Create Your Account</string>
+    <string name="uname">User Name</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="conpass">Confirm password</string>
+    <string name="haveacc">"Already have an Account, "</string>
+    <string name="sinin">Sign In</string>
+    <string name="nows">Now Showing</string>
+    <string name="dunename">Dune Part II</string>
+    <string name="dunetime">2h 45m</string>
+    <string name="dunerate">Rating: 8.5</string>
+    <string name="capname">Captain America: BNW</string>
+    <string name="captime">2h 00m</string>
+    <string name="caprate">Rating: 5.9</string>
+    <string name="swname">Snow White</string>
+    <string name="swtime">1h 49m</string>
+    <string name="swrate">Rating: 1.7</string>
+    <string name="comsoon">Coming Soon</string>
+    <string name="mcname">A MineCraft Movie</string>
+    <string name="mcdate">04 April 2025</string>
+    <string name="mcgenre">Action | Animation | Comedy</string>
+    <string name="miname">MI : Final Reckoning</string>
+    <string name="midate">23 May 2025</string>
+    <string name="migenre">Action | Adventure | Thriller</string>
+    <string name="challcom">Cinetix Hall Colombo</string>
+    <string name="challnug">Cinetix Hall Nugegoda</string>
+    <string name="challgam">Cinetix Hall Gampaha</string>
+    <string name="dunegenre">Action         |    Adventure    |    Sci-Fi</string>
+    <string name="feb">FEB</string>
+    <string name="remaintime">Remaining Time   05:00</string>
+    <string name="cont">CONTINUE</string>
+    <string name="cancelb">Cancel Booking</string>
+    <string name="usname">User Name</string>
+    <string name="confirm">Confirm</string>
+    <string name="WeavingStories">Weaving Stories</string>
+    <string name="book">Book Your Seat, Enjoy the Magic!</string>
+    <string name="duneplot">Paul Atreides unites with the Fremen while on a warpath of revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the f..</string>
+    <string name="capgenre">Action | Superhero</string>
+    <string name="swgenre">Adventure | Drama | Musical</string>
+    <string name="luka">Luka</string>
+    <string name="uemail">luqmanbooso@gmail.com</string>
+    <string name="edp">Edit Profile</string>
+    <string name="ap">Account Settings</string>
+    <string name="cp">Change Password</string>
+    <string name="pp">Privacy Policy</string>
+    <string name="totalamount">Total Rs. 3500.00</string>
+    <string name="fpass">Forgot Password?</string>
+    <string name="dunetikettime">March 28, 2023 • 7:30 PM • Hall 2</string>
+    <string name="vtik">View Ticket</string>
+    <string name="rvw">Review</string>
+    <string name="privacyp">Privacy Policy</string>
+    <string name="pp1">This Privacy Policy describes how we collect, use, and disclose your information when you use our movie ticket booking application.</string>
+    <string name="pp2">We collect information you provide directly to us, such as when you create an account, make a booking, or contact customer support. This may include your name, email address, phone number, and payment information.</string>
+    <string name="pp3">We use the information we collect to provide, maintain, and improve our services, process transactions, communicate with you about your bookings, and send you promotional content if you opt-in.</string>
+    <string name="pp4">We may share your information with theaters to facilitate your booking, payment processors to complete transactions, and service providers who perform services on our behalf.</string>
+    <string name="em" />
+    <string name="emcode">Enter verification code</string>
+    <string name="cinetix">CineTix</string>
+    <string name="tikid">TICKET ID: XW3Z57CW</string>
+    <string name="movies">MOVIE</string>
+    <string name="dt"><![CDATA[DATE &amp; TIME]]></string>
+    <string name="dunedttm">12:00 21.03.2025</string>
+    <string name="seats">SEATS</string>
+    <string name="duneseats">H14, H15</string>
+    <string name="tikprice">PRICE</string>
+    <string name="tikprices">Rs. 5000</string>
+    <string name="venue">VENUE</string>
+    <string name="scan">SCAN FOR ENTRY</string>
+    <string-array name="sorting_options">
+        <item>Popularity</item>
+        <item>Release Date</item>
+        <item>Rating</item>
+        <item>Alphabetical</item>
+    </string-array>
 </resources>
